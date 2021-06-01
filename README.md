@@ -4,7 +4,7 @@ Simple online diary app created with Node.js,Express and MongoDB
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Email User Details](#setup)
+* [Set Up Email User](#set-up-email-user)
 	
  ## General info
 The project allows the user to create, update and delete days description.
