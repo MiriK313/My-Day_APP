@@ -4,7 +4,8 @@ Simple online diary app created with Node.js,Express and MongoDB
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Set Up Email User](#set-up-email-user)
+* [SetUp Email User](#set-up-email-user)
+* [SetUp](#setUP)
 	
  ## General info
 The project allows the user to create, update and delete days description.
@@ -27,6 +28,18 @@ connect to gmail with this user details:
 * Username - miriuser123@gmail.com
 * Password - MiriUser123!
 
+## SetUp
+To run this project, install it locally using npm:
 
+```
+npm install --save-dev nodemon
+npm i mongoose
+npm install ejs express chai chai-http
+npm i mocha
+npm i nodemailer method-override
+npm install slugify
+npm run start
+
+```
 
 
