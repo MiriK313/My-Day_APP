@@ -6,43 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
+    <title>My Day</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <h1 class="navbar-brand">My Recipes</h1>
+        <h1 class="navbar-brand">My Days</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="recipes/new">Add New Recipe</a>
+                <a class="nav-item nav-link" href="days/new">Add New Day</a>
             </div>
         </div>
     </nav>
     <div class="container">
 
-        <% recipes.forEach(recipe => { %>
+        <% days.forEach(day => { %>
             <div class="card mt-4 w-50 font-weight-bold ">
 
                 <div class="card-body ">
                     <h4 class="card-title">
-                        <%= recipe.title %>
+                        <%= day.title %>
                     </h4>
                     <div class="card-subtitle text-muted mb-2">
-                        <%= recipe.createdAt.toLocaleDateString() %>
+                        <%= day.createdAt.toLocaleDateString() %>
                     </div>
-                    <div class="card-text mb-2">
-                        <%= recipe.description %>
-                    </div>
-                    <a href="recipes/<%= recipe.slug %>" class="btn btn-primary">Read More</a>
-                    <a href="recipes/edit/<%= recipe.id %>" class="btn btn-info">Edit</a>
-                    <form action="/recipes/<%= recipe.id %>?_method=DELETE" method="POST" class="d-inline">
+
+                    <a href="days/<%= day.slug %>" class="btn btn-primary">Read More</a>
+                    <a href="days/edit/<%= day.id %>" class="btn btn-info">Edit</a>
+                    <form action="/days/<%= day.id %>?_method=DELETE" method="POST" class="d-inline">
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
-                    <form action="recipes/email/<%= recipe.id %>" method="POST" class="d-inline">
+                    <form action="days/email/<%= day.id %>" method="POST" class="d-inline">
                         <button type="submit" class="btn btn-success">EmailMe</a> </form>                        </form>
             
                     </div>

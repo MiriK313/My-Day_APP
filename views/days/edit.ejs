@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
+    <title>My Day</title>
 </head>
 
 <body>
     <%- include('_nav') %>
-
         <div class="container">
-            <h3 class="mb-1">
-                The Email sent successfully!
-            </h3>
+            <h1 class="mb-4">Edit Day</h1>
+
+            <form action="/days/<%= day.id %>?_method=PUT" method="POST">
+                <%- include('_form_fields') %>
+            </form>
         </div>
 </body>
 
