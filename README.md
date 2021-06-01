@@ -41,11 +41,15 @@ npm install slugify
 npm run start
 
 ```
-![image](https://user-images.githubusercontent.com/85124420/120298120-75310680-c2d2-11eb-9582-db60d0efd98b.png)
+![image](https://user-images.githubusercontent.com/85124420/120298335-ab6e8600-c2d2-11eb-9231-4f106e6d171e.png)
 
-![image](https://user-images.githubusercontent.com/85124420/120298139-7d894180-c2d2-11eb-9cfa-3f0b6dd269e6.png)
+![image](https://user-images.githubusercontent.com/85124420/120298359-b0333a00-c2d2-11eb-99d8-46845ae0f489.png)
 
-![image](https://user-images.githubusercontent.com/85124420/120298186-8aa63080-c2d2-11eb-9c41-e0819ae98bbd.png)
+![image](https://user-images.githubusercontent.com/85124420/120298450-c214dd00-c2d2-11eb-9dbf-a23e1f32dc8d.png)
+
+![image](https://user-images.githubusercontent.com/85124420/120298479-c9d48180-c2d2-11eb-8915-492e6ccc52ed.png)
+
+![image](https://user-images.githubusercontent.com/85124420/120298515-d48f1680-c2d2-11eb-96e9-6e6117b9a6ad.png)
 
 
 
